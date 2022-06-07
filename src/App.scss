@@ -1,5 +1,65 @@
+.App {
+	display: flex;
+}
+
 .sidebar {
 	background-color: #1e2939;
-	height: 100vh;
-	width: 30%;
+	height: 100%;
+	width: 26%;
+	display: block;
+
+	&__photo-container {
+		img {
+			margin: 3rem 0;
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&__heading {
+		color: #fff;
+	}
+
+	&__item {
+		color: #fff;
+	}
+
+	&__contacts {
+		span {
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-right: 0.5rem;
+		}
+		& > li:last-child > a {
+			text-decoration: underline;
+			& > span {
+				// text-decoration: none;
+				display: inline-block;
+			}
+		}
+		a {
+			color: #777;
+		}
+	}
+
+	&__tech-skills,
+	&__soft-skills {
+		li::before {
+			content: '\2022';
+			color: #fb6d3a;
+			font-weight: bold;
+			display: inline-block;
+			width: 1rem;
+		}
+	}
+
+	&__info-container {
+		margin-left: 1.5rem;
+	}
+}
+
+.projects {
+	&__list-item > a {
+		color: #000;
+	}
 }
