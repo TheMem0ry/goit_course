@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar/Sidebar'
 import About from './components/About/About'
 import Projects from './components/Projects/Projects'
 import Vacancy from './components/Vacancy/Vacancy'
+import Education from './components/Education/Education'
 
 const aboutData = {
 	name: 'Maksym Koretskyi',
@@ -94,15 +95,22 @@ const projectsData = {
 	},
 }
 
+const educationData = {
+	university: 'National Mining University',
+	faculty: 'Faculty of Information Technologies',
+	date: 'Sep 2019 - Sep 2019',
+	country: 'Ukraine',
+}
+
 function App() {
 	return (
 		<div className='App'>
 			<Sidebar content={sidebarData}></Sidebar>
 			<main style={{ backgroundColor: '#cece', width: '100%' }}>
 				<About content={aboutData}></About>
-				<Projects projects={projectsData}></Projects>
-				<h3>Work Experience</h3>
-				<Vacancy vacancies={vacanciesData}></Vacancy>
+				<Projects projects={projectsData}>Projects</Projects>
+				<Vacancy vacancies={vacanciesData}>Work Experience</Vacancy>
+				<Education data={educationData}>Education</Education>
 			</main>
 		</div>
 	)

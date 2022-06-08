@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Projects = ({ projects }) => {
+const Projects = ({ projects, children }) => {
 	return (
 		<div>
-			<h1>Projects</h1>
+			<h3>{children}</h3>
 			<ul>
 				{Object.keys(projects).map(key => {
 					return (
 						<li>
-							<a>{projects[key].url}</a>
+							<a href={projects[key].url}>{projects[key].url}</a>
 							{projects[key].technology}
 						</li>
 					)
