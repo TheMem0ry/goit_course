@@ -1,5 +1,5 @@
 import React from 'react'
-import Responsibility from './Responsibility'
+import ResponsibilityList from './ResponsibilityList'
 
 const Vacancy = ({ vacancies }) => {
 	// Object.keys(vacancies).map(vacancy => {
@@ -19,17 +19,9 @@ const Vacancy = ({ vacancies }) => {
 							<span>{vacancies[vacancy].workDate}</span>
 							<span>{vacancies[vacancy].country}</span>
 						</h5>
-						<ul className='responsibilities'>
-							{Object.keys(vacancies[vacancy].responsibilities).map(
-								responsibility => {
-									return (
-										<Responsibility
-											content={vacancies[vacancy].responsibilities}
-										></Responsibility>
-									)
-								}
-							)}
-						</ul>
+						<ResponsibilityList
+							responsibilities={vacancies[vacancy].responsibilities}
+						></ResponsibilityList>
 					</div>
 				)
 			})}
