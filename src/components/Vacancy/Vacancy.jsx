@@ -1,5 +1,5 @@
 import React from 'react'
-import ResponsibilityList from './ResponsibilityList'
+import ResponsibilityList from './ResponsibilityList/ResponsibilityList'
 
 const Vacancy = ({ vacancies, children }) => {
 	// Object.keys(vacancies).map(vacancy => {
@@ -12,7 +12,7 @@ const Vacancy = ({ vacancies, children }) => {
 
 			{Object.keys(vacancies).map(vacancy => {
 				return (
-					<div className='vacancy'>
+					<div className='vacancy' key={vacancies[vacancy].workDate}>
 						<h4 className='position'>
 							{vacancies[vacancy].position}
 							<span className='company'>{vacancies[vacancy].company}</span>

@@ -7,7 +7,7 @@ const TechSkillsList = ({ content }) => {
 			<h1>Tech Skills</h1>
 			<ul>
 				{content.techSkills.map(skill => (
-					<TechSkillItem skill={skill}></TechSkillItem>
+					<TechSkillItem skill={skill} key={skill}></TechSkillItem>
 				))}
 			</ul>
 		</div>

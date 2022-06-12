@@ -4,7 +4,7 @@ const ResponsibilityList = ({ responsibilities }) => {
 	return (
 		<ul>
 			{Object.keys(responsibilities).map(resp => {
-				return <li>{responsibilities[resp]}</li>
+				return <li key={resp}>{responsibilities[resp]}</li>
 			})}
 		</ul>
 	)

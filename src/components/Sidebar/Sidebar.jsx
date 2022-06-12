@@ -1,7 +1,7 @@
 import React from 'react'
-import ContactList from '../Skills/ContactList'
-import SoftSkillsList from '../Skills/SoftSkillsList'
-import TechSkillsList from '../Skills/TechSkillsList'
+import ContactList from './contacts/ContactList'
+import SoftSkillsList from './softSkills/SoftSkillsList'
+import TechSkillsList from './techSkills/TechSkillsList'
 import styles from './Sidebar.module.scss'
 
 const Sidebar = ({ content }) => {

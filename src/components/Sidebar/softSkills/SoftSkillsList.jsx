@@ -7,7 +7,7 @@ const SoftSkillsList = ({ content }) => {
 			<h1>Soft Skills</h1>
 			<ul>
 				{content.softSkills.map(skill => (
-					<SoftSkillItem skill={skill} />
+					<SoftSkillItem skill={skill} key={skill} />
 				))}
 			</ul>
 		</div>

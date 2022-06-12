@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+a,
+a:link,
+a:active {
+	text-decoration: none;
+	display: inline-block;
+}
+
+.contacts__list-item {
+	color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.contacts__list-link {
+	color: #fff;
+	opacity: 0.5;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	margin-left: 10px;
+}
+
+.contacts__list-item:nth-child(2) > a {
+	text-decoration: underline;
+}
+body {
+	padding: 2rem;
+	background-color: #f5f7fa;
+	font-family: 'Montserrat', sans-serif;
+}
+.section-main {
+	display: flex;
+}
+
+.sidebar {
+	background-color: #1e2939;
+	padding-top: 40px;
+	width: 370px;
+}
+
+.main-content {
+	background-color: #fff;
+	padding: 80px 0 80px 88px;
+	width: 100%;
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar > :not(img) {
+	padding-left: 40px;
+}
+
+.contacts {
+	margin-top: 40px;
+}
+
+.tech-skills,
+.contacts,
+.soft-skills {
+	margin-bottom: 45px;
+}
+
+.tech-skills__list > li::before,
+.soft-skills__list > li::before {
+	content: '\2022';
+	display: inline-block;
+	color: #fb6d3a;
+	font-weight: bold;
+	width: 1rem;
+}
+
+.tech-skills__list-item,
+.soft-skills__list-item {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.contacts__heading,
+.tech-skills__heading,
+.soft-skills__heading {
+	color: #fff;
+	font-weight: bold;
+	font-size: 22px;
+	/* margin-bottom: 1rem; */
+}
+
+.heading {
+	font-weight: bold;
+}
+
+.heading--small {
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 700px;
+	margin-bottom: 8px;
+}
+
+.heading--large {
+	font-size: 45px;
+	line-height: 55px;
+	font-weight: 700px;
+}
+
+.about__description {
+	font-size: 14px;
+	line-height: 24px;
+	color: #595959;
+	opacity: 0.99;
+}
+
+.heading--medium {
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 27px;
+	margin-bottom: 8px;
+}
+
+.about,
+.projects,
+.work-experience {
+	margin-bottom: 48px;
+}
+
+.about {
+	max-width: 400px;
+}
+
+.projects {
+	max-width: 485px;
+}
+
+.about > h1,
+.about > h2 {
+	margin-bottom: 25px;
+}
+
+.projects__list > li {
+	list-style: unset;
+	margin-left: 17px;
+	color: #000;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.projects__link {
+	color: #595959;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	margin-left: 10px;
+}
+
+.spaces {
+	background-image: linear-gradient(
+		to right,
+		#595959 42%,
+		rgba(255, 255, 255, 0) 0%
+	);
+	background-position: center;
+	background-size: 10px 1px;
+	background-repeat: repeat-x;
+	padding-bottom: 10px;
+	opacity: 0.7;
+}
+
+.technology {
+	color: #595959;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.work-experience .work-experience__vacancy:not(:last-child) {
+	margin-bottom: 8px;
+}
+.work-experience {
+	max-width: 525px;
+}
+
+.vacancy__list-item::before {
+	content: '\2022';
+	display: inline-block;
+	color: #595959;
+	font-weight: bold;
+	width: 1rem;
+}
+
+.vacancy__list-item {
+	font-size: 14px;
+	line-height: 24px;
+	color: #595959;
+}
+
+.work-date {
+	margin-bottom: 8px;
+	font-size: 12px;
+	line-height: 15px;
+	color: #a8a8a8;
+}
+
+.work-date > span::before {
+	content: '|';
+	display: inline-block;
+	color: #000;
+	margin-left: 3px;
+}
+
+.vacancy__heading {
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.vacancy__heading-company {
+	color: #fb6d3a;
+}
+
+.education__university {
+	color: #fb6d3a;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.education__faculty {
+	margin-bottom: 8px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+}

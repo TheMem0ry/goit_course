@@ -7,7 +7,7 @@ const Projects = ({ projects, children }) => {
 			<ul>
 				{Object.keys(projects).map(key => {
 					return (
-						<li>
+						<li key={projects[key].url}>
 							<a href={projects[key].url}>{projects[key].url}</a>
 							{projects[key].technology}
 						</li>

@@ -7,7 +7,7 @@ const ContactList = ({ content }) => {
 			<h1>Contacts</h1>
 			<ul>
 				{content.contactsArr.map(contact => (
-					<ContactItem contact={contact}></ContactItem>
+					<ContactItem contact={contact} key={contact.title}></ContactItem>
 				))}
 			</ul>
 		</div>
